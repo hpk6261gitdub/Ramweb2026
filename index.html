@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>वैध AGRI FARM - Organic Seeds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Hind', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .sticky-nav {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="sticky-nav sticky top-0 z-50 border-b border-stone-200 py-4 px-6 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <div class="bg-green-600 text-white p-2 rounded-lg">
+                <i class="fas fa-seedling text-xl"></i>
+            </div>
+            <span class="text-2xl font-bold text-green-800 tracking-tight">वैध <span class="text-stone-600 uppercase text-lg">Agri Farm</span></span>
+        </div>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#home" class="hover:text-green-600 transition">होम</a>
+            <a href="#about" class="hover:text-green-600 transition">हमारे बारे में</a>
+            <a href="#products" class="hover:text-green-600 transition">बीज श्रेणियां</a>
+            <a href="#contact" class="hover:text-green-600 transition">संपर्क करें</a>
+        </div>
+        <button onclick="scrollToContact()" class="bg-green-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition shadow-md">
+            अभी आर्डर करें
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-gradient h-[80vh] flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">शुद्ध बीज, समृद्ध किसान</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">वैध एग्री फार्म - आपकी खेती के लिए 100% जैविक और उच्च गुणवत्ता वाले प्रमाणित बीज।</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#products" class="bg-white text-green-800 px-8 py-4 rounded-full font-bold text-lg hover:bg-stone-100 transition">उत्पाद देखें</a>
+                <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-green-800 transition">संपर्क करें</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div class="p-6">
+                <i class="fas fa-leaf text-4xl text-green-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">100% जैविक</h3>
+                <p class="text-gray-600">हमारे सभी बीज रसायनों से मुक्त और पूरी तरह से प्राकृतिक हैं।</p>
+            </div>
+            <div class="p-6">
+                <i class="fas fa-check-circle text-4xl text-green-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">प्रमाणित गुणवत्ता</h3>
+                <p class="text-gray-600">बाजार में लाने से पहले हर बीज का कड़ा गुणवत्ता परीक्षण किया जाता है।</p>
+            </div>
+            <div class="p-6">
+                <i class="fas fa-chart-line text-4xl text-green-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">बेहतर पैदावार</h3>
+                <p class="text-gray-600">हमारे बीजों के साथ अपनी फसल की पैदावार और गुणवत्ता बढ़ाएं।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section id="products" class="py-20 bg-stone-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-stone-800 mb-4">हमारी बीज श्रेणियां</h2>
+                <div class="h-1 w-20 bg-green-600 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Dhan -->
+                <div class="category-card bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200">
+                    <img src="https://images.unsplash.com/photo-1536633109431-6435bc2f293a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Dhan" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <span class="text-green-600 font-bold text-sm uppercase tracking-widest">Organic</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-4 text-stone-800">धान (Dhan)</h3>
+                        <p class="text-gray-600 mb-6">सुगंधित और उच्च गुणवत्ता वाला धान बीज, जो कम पानी में भी बेहतरीन पैदावार देता है।</p>
+                        <ul class="space-y-2 mb-8 text-sm">
+                            <li><i class="fas fa-seedling text-green-500 mr-2"></i> रोग प्रतिरोधी किस्में</li>
+                            <li><i class="fas fa-seedling text-green-500 mr-2"></i> भारी दाने, लंबी बाली</li>
+                        </ul>
+                        <button onclick="orderNow('धान')" class="w-full py-3 border-2 border-green-600 text-green-600 rounded-xl font-bold hover:bg-green-600 hover:text-white transition">विवरण देखें</button>
+                    </div>
+                </div>
+
+                <!-- Moong -->
+                <div class="category-card bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200">
+                    <img src="https://images.unsplash.com/photo-1599596557930-9993309a4a75?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Moong" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <span class="text-green-600 font-bold text-sm uppercase tracking-widest">Organic</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-4 text-stone-800">मूंग (Moong)</h3>
+                        <p class="text-gray-600 mb-6">जल्दी पकने वाली और पोषण से भरपूर मूंग की दाल के उत्तम बीज।</p>
+                        <ul class="space-y-2 mb-8 text-sm">
+                            <li><i class="fas fa-seedling text-green-500 mr-2"></i> 60-70 दिनों में तैयार</li>
+                            <li><i class="fas fa-seedling text-green-500 mr-2"></i> मिट्टी की उर्वरता बढ़ाए</li>
+                        </ul>
+                        <button onclick="orderNow('मूंग')" class="w-full py-3 border-2 border-green-600 text-green-600 rounded-xl font-bold hover:bg-green-600 hover:text-white transition">विवरण देखें</button>
+                    </div>
+                </div>
+
+                <!-- Gehu -->
+                <div class="category-card bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200">
+                    <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Gehu" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <span class="text-green-600 font-bold text-sm uppercase tracking-widest">Organic</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-4 text-stone-800">गेहूं (Gehu)</h3>
+                        <p class="text-gray-600 mb-6">शरबती और लोक-1 जैसी प्रीमियम गेहूं की किस्में, रोटी में स्वाद और सेहत।</p>
+                        <ul class="space-y-2 mb-8 text-sm">
+                            <li><i class="fas fa-seedling text-green-500 mr-2"></i> चमकदार और सुनहरे दाने</li>
+                            <li><i class="fas fa-seedling text-green-500 mr-2"></i> उच्च ग्लूटेन और प्रोटीन</li>
+                        </ul>
+                        <button onclick="orderNow('गेहूं')" class="w-full py-3 border-2 border-green-600 text-green-600 rounded-xl font-bold hover:bg-green-600 hover:text-white transition">विवरण देखें</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-4xl font-bold text-stone-800 mb-6">हमसे जुड़ें</h2>
+                    <p class="text-lg text-gray-600 mb-8">यदि आप हमारे जैविक बीजों के बारे में अधिक जानकारी चाहते हैं या थोक ऑर्डर देना चाहते हैं, तो कृपया नीचे दिया गया फॉर्म भरें या हमें सीधे कॉल करें।</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-green-100 p-3 rounded-full text-green-600">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800">हमारा पता</h4>
+                                <p class="text-gray-600">वैध एग्री फार्म, मुख्य बाजार, कृषि क्षेत्र</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-green-100 p-3 rounded-full text-green-600">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800">कॉल करें</h4>
+                                <p class="text-gray-600">+91 98XXX XXXXX</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-green-100 p-3 rounded-full text-green-600">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800">ईमेल</h4>
+                                <p class="text-gray-600">contact@vaidhagrifarm.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-stone-50 p-8 rounded-3xl shadow-inner border border-stone-200">
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">आपका नाम</label>
+                            <input type="text" required placeholder="पूरा नाम दर्ज करें" class="w-full p-4 rounded-xl border border-stone-300 focus:ring-2 focus:ring-green-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">मोबाइल नंबर</label>
+                            <input type="tel" required placeholder="अपना नंबर दर्ज करें" class="w-full p-4 rounded-xl border border-stone-300 focus:ring-2 focus:ring-green-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">बीज का चयन करें</label>
+                            <select id="seedSelect" class="w-full p-4 rounded-xl border border-stone-300 focus:ring-2 focus:ring-green-500 outline-none bg-white">
+                                <option value="">चुनें...</option>
+                                <option value="dhan">धान (Dhan)</option>
+                                <option value="moong">मूंग (Moong)</option>
+                                <option value="gehu">गेहूं (Gehu)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">संदेश</label>
+                            <textarea rows="4" placeholder="अपनी जरूरत लिखें..." class="w-full p-4 rounded-xl border border-stone-300 focus:ring-2 focus:ring-green-500 outline-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-green-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-green-700 transition shadow-lg">पूछताछ भेजें</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center space-x-2 mb-6">
+                    <i class="fas fa-seedling text-green-500 text-2xl"></i>
+                    <span class="text-2xl font-bold text-white tracking-tight">वैध <span class="text-stone-500 uppercase text-lg">Agri Farm</span></span>
+                </div>
+                <p class="mb-6">हम किसानों को सशक्त बनाने के लिए समर्पित हैं। हमारे जैविक बीज मिट्टी के स्वास्थ्य और फसल की उपज को बढ़ाने के लिए तैयार किए गए हैं।</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-green-500 transition text-xl"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-green-500 transition text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-green-500 transition text-xl"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">लिंक्स</h4>
+                <ul class="space-y-3">
+                    <li><a href="#home" class="hover:text-white transition">होम</a></li>
+                    <li><a href="#products" class="hover:text-white transition">उत्पाद</a></li>
+                    <li><a href="#about" class="hover:text-white transition">हमारे बारे में</a></li>
+                    <li><a href="#contact" class="hover:text-white transition">संपर्क</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">समय</h4>
+                <ul class="space-y-3">
+                    <li>सोम - शनि: 8:00 AM - 6:00 PM</li>
+                    <li>रविवार: अवकाश</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-12 pt-8 border-t border-stone-800 text-center text-sm">
+            <p>&copy; 2024 वैध Agri Farm. सभी अधिकार सुरक्षित।</p>
+        </div>
+    </footer>
+
+    <!-- Custom Dialog/Modal -->
+    <div id="successModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[100] px-4">
+        <div class="bg-white p-8 rounded-2xl max-w-sm w-full text-center shadow-2xl">
+            <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-check text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-stone-800 mb-2">सफलतापूर्वक!</h3>
+            <p class="text-gray-600 mb-6">आपका संदेश हमें मिल गया है। हम जल्द ही आपसे संपर्क करेंगे।</p>
+            <button onclick="closeModal()" class="w-full bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition">ठीक है</button>
+        </div>
+    </div>
+
+    <script>
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function orderNow(category) {
+            const select = document.getElementById('seedSelect');
+            if(category === 'धान') select.value = 'dhan';
+            if(category === 'मूंग') select.value = 'moong';
+            if(category === 'गेहूं') select.value = 'gehu';
+            
+            scrollToContact();
+        }
+
+        function closeModal() {
+            document.getElementById('successModal').classList.add('hidden');
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('successModal').classList.remove('hidden');
+            this.reset();
+        });
+    </script>
+</body>
+  </html>
